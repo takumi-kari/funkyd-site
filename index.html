@@ -17,6 +17,65 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
 }
+```css
+/* 全体をやわらかく */
+body {
+  background: #fdfaf7;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* ヘッダー */
+header {
+  background: linear-gradient(135deg, #ffb6b9, #ff7a7a);
+  color: white;
+  padding: 40px 20px;
+  border-radius: 0 0 20px 20px;
+}
+
+/* 見出し */
+h1, h2 {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* セクション */
+.section {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* ナビ */
+nav {
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+nav a {
+  color: #333;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #ff7a7a;
+}
+
+/* ボタン強化 */
+.btn {
+  background: linear-gradient(135deg, #ff7a7a, #ffb6b9);
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* カード（料金とか） */
+.card {
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+```
 
 .card {
   background: #fff;
@@ -124,9 +183,14 @@ footer {
 }
 </style>
 </head>
+```html
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+```
 
 <body>
-
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
 <header>
   <h1>FunkyD plus</h1>
   <p>トリミングサロン</p>
